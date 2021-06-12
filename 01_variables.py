@@ -15,3 +15,10 @@ paragraph = '''This is a paragraph,
 because it is too long so that I break
 it into lines'''
 print(paragraph)
+
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
