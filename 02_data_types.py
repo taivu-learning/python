@@ -13,6 +13,11 @@ print(myList[1])
 myList[1] = "lemon_changed"
 print(myList[1])
 
+print("\nList comprehension:")
+# newlist = [expression for item in iterable if condition == True]
+fruits = [fruit.upper() for fruit in myList if "l" in fruit]
+print(fruits)
+
 print("\nTuple is a collection which is ordered and unchangeable. Allows duplicate members.")
 myTuple = ('apple', 'lemon', 'banana')
 print(myTuple)
@@ -38,3 +43,12 @@ for x in mySet:
 
 myFrozenset = frozenset({'apple', 'lemon', 'banana'})
 print(myFrozenset)
+
+
+"""
+There are four collection data types in the Python programming language:
+- List: is a collection which is ordered and changeable. Allows duplicate members.
+- Tuple: is a collection which is ordered and unchangeable. Allows duplicate members.
+- Set: is a collection which is unordered and unindexed. No duplicate members.
+- Dictionary: is a collection which is ordered* and changeable. No duplicate members.
+"""
