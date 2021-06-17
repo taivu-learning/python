@@ -22,3 +22,8 @@ itemno = 567
 price = 49.95
 myorder = "I want {} pieces of item {} for {} dollars."
 print(myorder.format(quantity, itemno, price))
+
+brand = "Toyota"
+car = "Hilux"
+buyStr = "I get a {carName}, from {brandName} company"
+print(buyStr.format(carName=car, brandName=brand))
